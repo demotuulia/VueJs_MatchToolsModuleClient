@@ -159,13 +159,19 @@ c
 <a name='install-section'></a>
 ## Install
 
-1) First you need to install the backend API. See TODO
+1) First you need to install the backend API. See
+   [Install API](https://github.com/demotuulia/Laravel10_MatchToolsModule#install-section)
 
-2) Install npm
+3) Install npm
  https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-3) Clone this procjet by TODO:
-4) Go to the cloned folder and do
+4) Clone this procjet by
+
+
+   ``` git clone https://github.com/demotuulia/VueJs_MatchToolsModuleClient.git```
+
+
+5) Go to the cloned folder and do
 ```
 npm install
 ```
