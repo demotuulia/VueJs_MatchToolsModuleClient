@@ -113,7 +113,6 @@ Here you can see the statistics of the matches
 
 ### Admin match form
 Here you can add, delete and edit the matches.
-The possible match types are\
 
 
 <img src="documents/img/22_admin_form.png">
