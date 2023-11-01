@@ -1,0 +1,279 @@
+/*
+  =========================================================
+  Global style
+  =========================================================
+ */
+
+$matchToolsLightBlue: #B5C9F1;
+$matchToolsDarkBlue: #1d69bf;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#ajaxSpinner {
+  display: block;
+
+}
+
+#ajaxSpinner img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 50%;
+}
+
+
+.errorMessageBox {
+  background-color: #efa2a9;
+}
+
+.successMessageBox {
+  background-color: #71dd8a;
+}
+
+th {
+  color: $matchToolsDarkBlue;
+}
+
+.bg-mt-light {
+  background-color: $matchToolsLightBlue;
+  color: $matchToolsDarkBlue;
+}
+
+.text-mt-dark {
+  color: $matchToolsDarkBlue;
+}
+
+.bg-mt-dark {
+  background-color: $matchToolsDarkBlue;
+}
+
+.btn-primary {
+  background-color: $matchToolsDarkBlue;
+}
+
+
+.navbar-toggler-icon {
+  background-color: $matchToolsDarkBlue;
+}
+
+.btn-light {
+  background-color: $matchToolsLightBlue;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: $matchToolsLightBlue;
+}
+
+.footer img{
+  height: 24px;
+}
+/*
+  =========================================================
+  Front end style
+  =========================================================
+ */
+/* NavBar */
+$headerHeight: 200px;
+$navBarOpacity: 1;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0056b3;
+  opacity: 0.6;
+  max-width: 90%;
+}
+
+header {
+
+  height: $headerHeight;
+}
+
+.navbar {
+  background-size: cover;
+  height: $headerHeight;
+  background-image: url("src/assets/img/IMG_0494.jpeg");;
+  background-size: cover;
+}
+
+header {
+  height: $headerHeight;
+}
+
+
+.navbar-toggler,
+.navbar-toggler-icon,
+{
+  background-color: $matchToolsDarkBlue;
+  opacity: $navBarOpacity;
+}
+
+input, select, option, {
+  accent-color: $matchToolsLightBlue;
+  background-color: $matchToolsLightBlue;
+  border-color: #9fcdff;
+  border-radius: 5px;
+  margin-bottom: 0.3em;
+  width: 90%;
+}
+
+.navBarSearchInput {
+  margin-bottom: 0px;
+  height: 1.5em;
+}
+
+
+.profileListButton {
+  width: 1%;
+}
+
+#homePageLogos img
+               {
+  width: 95px;
+               }
+
+#home-slogan-mobile{
+  display: none;
+}
+@media(max-width:800px) {
+  #home-slogan {
+   display: none;
+  }
+  #home-slogan-mobile{
+    display: block;
+    height: 10%;
+  }
+}
+
+/*
+  =========================================================
+  Admin style
+  =========================================================
+ */
+$adminContentWidth: 800px;
+
+#admin-wrapper {
+}
+
+#adminSidebar {
+  background-color: $matchToolsLightBlue;
+  width: 200px;
+  float: left;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url("/src/assets/icons/logo.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 15% 2%;
+  padding: 0px;
+  padding-top: 100px;
+  display: none;
+}
+
+@media(min-width:1000px) {
+  #adminSidebar {
+    display: block;
+  }
+}
+
+#adminSidebar ul, li {
+  list-style: none;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+#adminSidebar a.selected {
+  color: white ;
+  font-weight: bold;
+}
+
+#adminSidebar a {
+  text-decoration: none;
+  color: $matchToolsDarkBlue;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+#adminSidebar a:hover {
+  color: #ffffff;
+}
+
+$adminContentWidth: 800px;
+$adminContentLeftMargin: 10px;
+#adminContent {
+  width: $adminContentWidth;
+  float: left;
+  padding-right: 0px;
+  margin-top: 10px;
+  margin-left: $adminContentLeftMargin;
+  height: 500px;
+  min-height: 80vh;
+  overflow-y: auto;
+}
+
+#adminTitle,
+#adminMessageBox {
+  width: $adminContentWidth;
+  margin-left: $adminContentLeftMargin;
+  float: left;
+}
+
+#adminLoginForm {
+  background-color: #B5C9F1;
+  color: $matchToolsDarkBlue;
+}
+
+#adminLoginForm input {
+  background-color: #FFFFFF;
+}
+
+#adminLoginForm button {
+  margin-top: 5px;
+  background-color: $matchToolsDarkBlue;
+  color: white;
+}
+
+.dashboardPie {
+  height: 250px;
+}
